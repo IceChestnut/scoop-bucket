@@ -1,21 +1,11 @@
 {
-    "version": "7.0.7",
+    "version": "0.0",
     "homepage": "https://github.com/yoshiko2/Movie_Data_Capture",
     "description": "Movie Metadata Crawler | Scraper",
-    "license": "GNU General Public License v3.0",
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/yoshiko2/Movie_Data_Capture/releases/download/7.0.7/MDC-7.0.7-Windows-x86_64.zip",
-            "hash": "B4913BF810691818E23B5DBB7A171AA75D109ADE702484CD85A74D47988FD8C0"
-        }
-    },
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/yoshiko2/Movie_Data_Capture/releases/download/7.0.7/MDC-7.0.7-Windows-x86_64.zip",
+    "hash": "8599139b4f959a8229341bba431e3391572e36b8c7d3ff24ede36b8831b9286d",
     "bin": "MDC.exe",
-    "shortcuts": [
-        [
-            "MDC.exe",
-            "Movie Data Capture"
-        ]
-    ],
     "pre_install": [
         "$ini = \"config.ini\"",
         "if (!(Test-Path \"$persist_dir\\$ini\")) {",
@@ -25,10 +15,6 @@
     "persist": "config.ini",
     "checkver": "github",
     "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/yoshiko2/Movie_Data_Capture/releases/download/$version/MDC-$version-Windows-x86_64.zip"
-            }
-        }
+        "url": "https://github.com/yoshiko2/Movie_Data_Capture/releases/download/$version/MDC-$version-Windows-x86_64.zip"
     }
 }
