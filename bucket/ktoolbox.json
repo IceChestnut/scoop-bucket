@@ -6,6 +6,7 @@
     "url": "https://github.com/Ljzd-PRO/KToolBox/releases/download/v0.4.0/ktoolbox-executable-Windows-x86_64-v0.4.0.zip",
     "hash": "f26ef52a3ae52be42030cf05d6266e62f451cd3d18460745ca190985f74483ea",
     "bin": "ktoolbox.exe",
+    "extract_dir": "ktoolbox-executable-Windows-x86_64",
     "pre_install": [
         "$ini = \"prod.env\"",
         "if (!(Test-Path \"$persist_dir\\$ini\")) {",
@@ -21,6 +22,7 @@
         "regex": "/releases/tag/v([\\d.]+(-alpha|-beta|-rc)?(\\.\\d+)?)"
     },
     "autoupdate": {
+        "extract_dir": "ktoolbox-executable-Windows-x86_64",
         "url": "https://github.com/Ljzd-PRO/KToolBox/releases/download/v$version/ktoolbox-executable-Windows-x86_64-v$version.zip"
     }
 }
