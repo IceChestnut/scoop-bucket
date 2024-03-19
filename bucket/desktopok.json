@@ -1,0 +1,34 @@
+{
+    "version": "11.18",
+    "description": "Save and restore the desktop icon positions.",
+    "homepage": "https://www.softwareok.com/?seite=Freeware/DesktopOK",
+    "license": "https://www.softwareok.com/?seite=Freeware/DesktopOK/Eula",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.softwareok.com/Download/DesktopOK_x64.zip",
+            "hash": "f300aa91f50db7bff89e28c1cd2ed7d7c41e9e10339f1d844f2ece90062b87f2"
+        }
+    },
+    "shortcuts": [
+        [
+            "DesktopOK_x64.exe",
+            "DesktopOK"
+        ]
+    ],
+    "pre_install": [
+        "$ini = \"$dir\\DesktopOK.ini\"",
+        "if (!(Test-Path \"$ini\")) {",
+        "   New-Item -Name \"$ini\" -ItemType File",
+        "   Add-Content -Path \"$ini\" -Value \"\" -Encoding Ascii",
+        "}"
+    ],
+    "persist": "DesktopOK.ini",
+    "checkver": {
+        "url": "https://www.softwareok.com/?Download=DesktopOK",
+        "regex": "Download DesktopOK (?<ver>[\\d.]+) for Microsoft Windows",
+        "replace": "${ver}"
+    },
+    "autoupdate": {
+        "url": "https://www.softwareok.com/Download/DesktopOK_x64.zip"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "version": "4.1",
+    "description": "*booru image downloader",
+    "homepage": "https://github.com/KurtBestor/Hitomi-Downloader",
+    "license": "Unknow",
+    "url": "https://github.com/KurtBestor/Hitomi-Downloader/releases/download/v4.1/hitomi_downloader_GUI.zip",
+    "hash": "ab58de381ea3b49783aad509e6f1cb80481562c44371771438ab0288ba44076d",
+    "shortcuts": [
+        [
+            "hitomi_downloader_GUI.exe",
+            "hitomi_downloader_GUI"
+        ]
+    ],
+    "pre_install": [
+        "$ini = \"$dir\\hitomi_downloader_GUI.ini\"",
+        "if (!(Test-Path \"$ini\")) {",
+        "   New-Item -Name \"$ini\" -ItemType File",
+        "}"
+    ],
+    "persist": "hitomi_downloader_GUI.ini",
+    "checkver": {
+        "url": "https://api.github.com/repos/KurtBestor/Hitomi-Downloader/releases",
+        "regex": "/releases/tag/v([\\d.]+(-alpha|-beta|-rc)?(\\.\\d+)?)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/KurtBestor/Hitomi-Downloader/releases/download/v$version/hitomi_downloader_GUI.zip"
+    }
+}
