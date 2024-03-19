@@ -5,7 +5,9 @@
     "license": "GPL-3.0-only",
     "url": "https://github.com/mvdctop/Movie_Data_Capture/releases/download/7.0.7/MDC-7.0.7-Windows-x86_64.zip",
     "hash": "6f3fcf6ae3a209df35b50d943c25f3dd49d16f698389be427924c3bda855e505",
-    "bin": "MDC.exe",
+    "shortcuts": [
+        ["MDC.exe", "Movie Data Capture"]
+    ],
     "pre_install": [
         "$ini = \"config.ini\"",
         "if (!(Test-Path \"$persist_dir\\$ini\")) {",
