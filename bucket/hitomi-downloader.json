@@ -12,9 +12,9 @@
         ]
     ],
     "pre_install": [
-        "$ini = \"$dir\\hitomi_downloader_GUI.ini\"",
-        "if (!(Test-Path \"$ini\")) {",
-        "   New-Item -Name \"$ini\" -ItemType File",
+        "$ini = \"hitomi_downloader_GUI.ini\"",
+        "if (!(Test-Path \"$persist_dir\\$ini\")) {",
+        "   New-Item -Path \"$dir\\$ini\" -ItemType File",
         "}"
     ],
     "persist": "hitomi_downloader_GUI.ini",

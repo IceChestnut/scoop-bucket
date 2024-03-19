@@ -17,9 +17,9 @@
     ],
     "pre_install": [
         "$ini = \"$dir\\DesktopOK.ini\"",
-        "if (!(Test-Path \"$ini\")) {",
-        "   New-Item -Name \"$ini\" -ItemType File",
-        "   Add-Content -Path \"$ini\" -Value \"\" -Encoding Ascii",
+        "if (!(Test-Path \"$persist_dir\\$ini\")) {",
+        "   New-Item -Path \"$dir\\$ini\" -ItemType File",
+        "   Add-Content -Path \"$dir\\$ini\" -Value \"\" -Encoding Ascii",
         "}"
     ],
     "persist": "DesktopOK.ini",

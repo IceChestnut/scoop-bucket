@@ -17,9 +17,9 @@
         ]
     ],
     "pre_install": [
-        "$ini = \"$dir\\config.ini\"",
-        "if (!(Test-Path \"$ini\")) {",
-        "   Add-Content -Path \"$ini\" -Value \"\" -Encoding Ascii",
+        "$ini = \"config.ini\"",
+        "if (!(Test-Path \"$persist_dir\\$ini\")) {",
+        "   New-Item -Path \"$dir\\$ini\" -ItemType File",
         "}"
     ],
     "persist": "config.ini",

@@ -12,13 +12,13 @@
         ]
     ],
     "pre_install": [
-        "$ini = \"$dir\\tags.xml\"",
-        "if (!(Test-Path \"$ini\")) {",
-        "   New-Item -Name \"$ini\" -ItemType File",
+        "$ini = \"tags.xml\"",
+        "if (!(Test-Path \"$persist_dir\\$ini\")) {",
+        "   New-Item -Path \"$dir\\$ini\" -ItemType File",
         "}",
-        "$ini = \"$dir\\downloaded.sqlite\"",
-        "if (!(Test-Path \"$ini\")) {",
-        "   New-Item -Name \"$ini\" -ItemType File",
+        "$ini = \"downloaded.sqlite\"",
+        "if (!(Test-Path \"$persist_dir\\$ini\")) {",
+        "   New-Item -Path \"$dir\\$ini\" -ItemType File",
         "}"
     ],
     "persist": [
