@@ -23,7 +23,8 @@
     ],
     "persist": [
         "tags.xml",
-        "downloaded.sqlite"
+        "downloaded.sqlite",
+        "downloads"
     ],
     "checkver": {
         "url": "https://api.github.com/repos/Nandaka/DanbooruDownloader/releases",
