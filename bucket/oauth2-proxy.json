@@ -15,7 +15,7 @@
         ]
     ],
     "pre_install": [
-        "Move-Item -Path oauth2-proxy -Destination oauth2-proxy.exe",
+        "Move-Item -Path \"$dir\\oauth2-proxy\" -Destination \"$dir\\oauth2-proxy.exe\"",
         "$ini = \"oauth2-proxy.cfg\"",
         "if (!(Test-Path \"$persist_dir\\$ini\")) {",
         "   New-Item -Path \"$dir\\$ini\" -ItemType File",
