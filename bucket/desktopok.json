@@ -19,7 +19,7 @@
         "$ini = \"DesktopOK.ini\"",
         "if (!(Test-Path \"$persist_dir\\$ini\")) {",
         "   New-Item -Path \"$dir\\$ini\" -ItemType File",
-        "   Add-Content -Path \"$dir\\$ini\" -Value \"\" -Encoding Ascii",
+        " # Add-Content -Path \"$dir\\$ini\" -Value \"\" -Encoding Ascii",
         "}"
     ],
     "persist": "DesktopOK.ini",
