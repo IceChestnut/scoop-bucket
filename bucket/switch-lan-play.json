@@ -1,0 +1,23 @@
+{
+    "description": "Enjoy games with your friends as if you were on a LAN.",
+    "homepage": "https://github.com/spacemeowx2/switch-lan-play",
+    "license": "GPL-3.0-only",
+    "version": "0.2.2",
+    "architecture": {
+        "64bit": {
+            "hash": "d160b1d97266f3f28a71b4420a0ad2cd088a7977c2dd3b25af155652d8d8d91f",
+            "url": "https://github.com/spacemeowx2/switch-lan-play/releases/download/v0.2.2/lan-play-win64.exe#/lan-play-win64.exe"
+        }
+    },
+    "bin": [
+        "lan-play-win64.exe"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/spacemeowx2/switch-lan-play/releases/download/v$version/lan-play-win64.exe#/lan-play-win64.exe"
+            }
+        }
+    }
+}
