@@ -15,6 +15,7 @@
     },
     "extract_dir": "nacos",
     "bin": [["bin\\startup.cmd", "startup-nacos"], ["bin\\shutdown.cmd", "shutdown-nacos"]],
+    "shortcuts": [["bin\\startup.cmd", "startup-nacos"], ["bin\\shutdown.cmd", "shutdown-nacos"]],
     "persist": ["conf", "data", "logs"],
     "checkver": "github",
     "autoupdate": {

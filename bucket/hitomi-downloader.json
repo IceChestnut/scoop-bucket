@@ -8,7 +8,7 @@
     "shortcuts": [
         [
             "hitomi_downloader_GUI.exe",
-            "hitomi_downloader_GUI"
+            "Hitomi Downloader"
         ]
     ],
     "pre_install": [
