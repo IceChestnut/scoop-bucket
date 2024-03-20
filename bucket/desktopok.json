@@ -29,6 +29,10 @@
         "replace": "${ver}"
     },
     "autoupdate": {
-        "url": "https://www.softwareok.com/Download/DesktopOK_x64.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://www.softwareok.com/Download/DesktopOK_x64.zip"
+            }
+        }
     }
 }
