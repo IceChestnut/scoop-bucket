@@ -1,10 +1,10 @@
 {
-    "version": "0.5.2",
+    "version": "0.6.0",
     "description": "Downloader for Kemono.party / .su with High Customizability",
     "homepage": "https://github.com/Ljzd-PRO/KToolBox",
     "license": "BSD-3-Clause",
-    "url": "https://github.com/Ljzd-PRO/KToolBox/releases/download/v0.5.2/ktoolbox-executable-Windows-x86_64-v0.5.2.zip",
-    "hash": "96b253d47c8c776ca6bf5424265370880c41af0113f9cd142effc0efdacde5dc",
+    "url": "https://github.com/Ljzd-PRO/KToolBox/releases/download/v0.6.0/ktoolbox-executable-Windows-x86_64-v0.6.0.zip",
+    "hash": "8036a50b9fa021c24518ca5fbd18f0534f3ecd4d3ee9f49381e2772c742d4709",
     "bin": "ktoolbox.exe",
     "extract_dir": "ktoolbox-executable-Windows-x86_64",
     "persist": [
