@@ -1,10 +1,10 @@
 {
-    "version": "7.1.1",
+    "version": "7.1.2",
     "homepage": "https://github.com/mvdctop/Movie_Data_Capture",
     "description": "Movie Metadata Crawler | Scraper",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/mvdctop/Movie_Data_Capture/releases/download/7.1.1/MDC-7.1.1-Windows-x86_64.zip",
-    "hash": "ac992149065d2a72b9d1b6008257c8e8f468fbc8b8adee0a3a775ac106f63cc5",
+    "url": "https://github.com/mvdctop/Movie_Data_Capture/releases/download/7.1.2/MDC-7.1.2-Windows-x86_64.zip",
+    "hash": "a389e24dadfdd171c65a3b79d35bb2df7f95cdb42e51a7f4177238509eb26560",
     "shortcuts": [
         [
             "MDC.exe",
