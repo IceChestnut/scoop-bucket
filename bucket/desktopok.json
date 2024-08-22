@@ -1,12 +1,12 @@
 {
-    "version": "11.32.1",
+    "version": "11.33",
     "description": "Save and restore the desktop icon positions.",
     "homepage": "https://www.softwareok.com/?seite=Freeware/DesktopOK",
     "license": "https://www.softwareok.com/?seite=Freeware/DesktopOK/Eula",
     "architecture": {
         "64bit": {
             "url": "https://www.softwareok.com/Download/DesktopOK_x64.zip",
-            "hash": "999570320ee149f149c5448837d97a46155abd6a73ad17c036227d28a6f27481"
+            "hash": "040aba616c50868fd2dd1d6fa99381e1ca977c20c3051ba85dff9546f9bba1d9"
         }
     },
     "shortcuts": [
