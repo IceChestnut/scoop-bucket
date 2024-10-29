@@ -11,17 +11,8 @@
             "if (Test-Path \"$MaaDir\") {",
             "    Get-ChildItem -Path \"$MaaDir\\current\" -Filter \"cache\" | Remove-Item -Force -Recurse",
             "    Get-ChildItem -Path \"$MaaDir\\current\" -Filter \"resource\" | Remove-Item -Force -Recurse",
-            "    New-Item \"$MaaDir\\current\\cache\" -ItemType Junction -Target \"$dir\\cache\" | Out-Null",
-            "    New-Item \"$MaaDir\\current\\resource\" -ItemType Junction -Target \"$dir\\resource\" | Out-Null",
-            "}"
-        ]
-    },
-    "uninstaller": {
-        "script": [
-            "$MaaDir = $(appdir maa $global)",
-            "if (Test-Path \"$MaaDir\") {",
-            "    Get-ChildItem -Path \"$MaaDir\\current\" -Filter \"cache\" | Remove-Item -Force -Recurse",
-            "    Get-ChildItem -Path \"$MaaDir\\current\" -Filter \"resource\" | Remove-Item -Force -Recurse",
+            "    Copy-Item \"$dir\\cache\" \"$MaaDir\\current\\cache\" -Recurse",
+            "    Copy-Item \"$dir\\resource\" \"$MaaDir\\current\\resource\" -Recurse",
             "}"
         ]
     },
