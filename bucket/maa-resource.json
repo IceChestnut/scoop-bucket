@@ -20,8 +20,8 @@
         "script": [
             "$MaaDir = $(appdir maa $global)",
             "if (Test-Path \"$MaaDir\") {",
-            "    Get-ChildItem -Path \"$FoobarDir\\current\" -Filter \"cache\" | Remove-Item -Force -Recurse",
-            "    Get-ChildItem -Path \"$FoobarDir\\current\" -Filter \"resource\" | Remove-Item -Force -Recurse",
+            "    Get-ChildItem -Path \"$MaaDir\\current\" -Filter \"cache\" | Remove-Item -Force -Recurse",
+            "    Get-ChildItem -Path \"$MaaDir\\current\" -Filter \"resource\" | Remove-Item -Force -Recurse",
             "}"
         ]
     },
