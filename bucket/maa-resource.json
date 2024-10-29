@@ -5,6 +5,26 @@
     "version": "0.2024.10.29",
     "url": "https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip",
     "extract_dir": "MaaResource-main",
+    "installer": {
+        "script": [
+            "$MaaDir = $(appdir maa $global)",
+            "if (Test-Path \"$MaaDir\") {",
+            "    Get-ChildItem -Path \"$MaaDir\\current\" -Filter \"cache\" | Remove-Item -Force -Recurse",
+            "    Get-ChildItem -Path \"$MaaDir\\current\" -Filter \"resource\" | Remove-Item -Force -Recurse",
+            "    New-Item \"$MaaDir\\current\\cache\" -ItemType Junction -Target \"$dir\\cache\" | Out-Null",
+            "    New-Item \"$MaaDir\\current\\resource\" -ItemType Junction -Target \"$dir\\resource\" | Out-Null",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "$MaaDir = $(appdir maa $global)",
+            "if (Test-Path \"$MaaDir\") {",
+            "    Get-ChildItem -Path \"$FoobarDir\\current\" -Filter \"cache\" | Remove-Item -Force -Recurse",
+            "    Get-ChildItem -Path \"$FoobarDir\\current\" -Filter \"resource\" | Remove-Item -Force -Recurse",
+            "}"
+        ]
+    },
     "checkver": {
         "url": "https://github.com/MaaAssistantArknights/MaaResource/commits/main.atom",
         "regex": "(?s)>(\\d+)-(\\d+)-(\\d+)T.*?/(?<sha>[0-9a-f]{40})",
