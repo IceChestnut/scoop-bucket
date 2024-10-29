@@ -7,8 +7,8 @@
     "extract_dir": "MaaResource-main",
     "checkver": {
         "url": "https://github.com/MaaAssistantArknights/MaaResource/commits/main.atom",
-        "regex": "(?ms)<id[^>]*>\\s*\\S+/(?<sha>(?<shortSha>[0-9a-f]{10})[0-9a-f]*)\\s*</id>",
-        "replace": "${shortSha}"
+        "regex": "(?s)>(\\d+)-(\\d+)-(\\d+)T.*?/(?<sha>[0-9a-f]{40})",
+        "replace": "0.${1}.${2}.${3}"
     },
     "autoupdate": {
         "url": "https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip",
