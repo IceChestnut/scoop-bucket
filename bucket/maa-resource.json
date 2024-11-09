@@ -9,8 +9,8 @@
         "script": [
             "$MaaDir = $(appdir maa $global)",
             "if (Test-Path \"$MaaDir\") {",
-            "    Copy-Item \"$dir\\cache\" \"$MaaDir\\current\\cache\" -Recurse -Force",
-            "    Copy-Item \"$dir\\resource\" \"$MaaDir\\current\\resource\" -Recurse -Force",
+            "    Copy-Item \"$dir\\cache\" \"$MaaDir\\current\" -Recurse -Force",
+            "    Copy-Item \"$dir\\resource\" \"$MaaDir\\current\" -Recurse -Force",
             "}"
         ]
     },
