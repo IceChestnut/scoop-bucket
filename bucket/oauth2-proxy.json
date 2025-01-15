@@ -1,12 +1,12 @@
 {
-    "version": "7.8.0",
+    "version": "7.8.1",
     "description": "A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers.",
     "homepage": "https://oauth2-proxy.github.io/oauth2-proxy",
     "license": "MIT",
-    "url": "https://github.com/oauth2-proxy/oauth2-proxy/releases/download/v7.8.0/oauth2-proxy-v7.8.0.windows-amd64.tar.gz",
-    "hash": "88f309eabfdc5de9f51a20820bdcd715603bd31943be7470f9e3e2b6df74d430",
+    "url": "https://github.com/oauth2-proxy/oauth2-proxy/releases/download/v7.8.1/oauth2-proxy-v7.8.1.windows-amd64.tar.gz",
+    "hash": "c64ad8388ce8d9280c220f7f3da42a162e021bda3517c38d7321b13925a38dd0",
     "bin": "oauth2-proxy.exe",
-    "extract_dir": "oauth2-proxy-v7.8.0.windows-amd64",
+    "extract_dir": "oauth2-proxy-v7.8.1.windows-amd64",
     "shortcuts": [
         [
             "oauth2-proxy.exe",
