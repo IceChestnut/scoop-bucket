@@ -19,7 +19,7 @@
     ],
     "persist": [
         "hitomi_downloader_GUI.ini",
-        "downloads"
+        "hitomi_downloaded"
     ],
     "checkver": {
         "url": "https://api.github.com/repos/KurtBestor/Hitomi-Downloader/releases",
