@@ -5,6 +5,7 @@
     "license": "AGPL-3.0",
     "url": "https://github.com/MaaAssistantArknights/maa-cli/releases/download/v0.5.8/maa_cli-v0.5.8-x86_64-pc-windows-msvc.zip",
     "hash": "7a82a7c8d2867104e049cc072bf958a47dd3c3ec1ed40306c0c1b0e6659250a0",
+    "bin": "maa.exe",
     "checkver": {
         "url": "https://api.github.com/repos/MaaAssistantArknights/maa-cli/releases",
         "regex": "/releases/tag/v([\\d.]+(-alpha|-beta|-rc)?(\\.\\d+)?)"
