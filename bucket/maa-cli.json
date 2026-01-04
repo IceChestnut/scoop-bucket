@@ -1,10 +1,10 @@
 {
-    "version": "0.6.0-beta.3",
+    "version": "0.6.0-beta.4",
     "description": "MAA命令行工具 | A simple CLI for MAA.",
     "homepage": "https://www.maa.plus/",
     "license": "AGPL-3.0",
-    "url": "https://github.com/MaaAssistantArknights/maa-cli/releases/download/v0.6.0-beta.3/maa_cli-v0.6.0-beta.3-x86_64-pc-windows-msvc.zip",
-    "hash": "1934b74f7fee30f2251ef8db4dde807fd85530ceed4253eeb392a8ae6defaa7b",
+    "url": "https://github.com/MaaAssistantArknights/maa-cli/releases/download/v0.6.0-beta.4/maa_cli-v0.6.0-beta.4-x86_64-pc-windows-msvc.zip",
+    "hash": "b979d357b0421e03add421c827a03c7e11d2cec0924503a98069cd2ba25b7668",
     "extract_dir": "maa_cli-x86_64-pc-windows-msvc",
     "bin": "maa.exe",
     "checkver": {
